@@ -64,6 +64,13 @@
 		<property name="sessionFactory" ref="factory"></property>
 	</bean>
 
+	
+	<bean class="com.apex.dao.UserDao" name="userDao">
+	<property name="hibernateTemplate" ref="hibernateTemplate"></property>
+	
+	
+	
+	</bean>
 	<bean
 		class="org.springframework.orm.hibernate5.HibernateTransactionManager"
 		name="transactionManager">

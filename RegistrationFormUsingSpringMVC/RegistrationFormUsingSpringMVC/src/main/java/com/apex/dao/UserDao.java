@@ -14,7 +14,7 @@ public class UserDao {
 	@Transactional
 
 	public int saveUser(User user) {
-		int id = (Integer) this.hibernateTemplate.save(user);
+		Integer id = (Integer) this.hibernateTemplate.save(user);
 		return id;
 
 	}
